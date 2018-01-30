@@ -1,0 +1,131 @@
+footer#site-footer {
+  height: auto;
+  padding-bottom: 5%;
+  background-image: -o-linear-gradient(bottom, #000000 0%, #0B0D29 96%);
+  background-image: -o-linear-gradient(bottom, #000000 0%, #05061C 96%);
+  background-image: -moz-linear-gradient(bottom, #000000 0%, #05061C 96%);
+  background-image: -webkit-linear-gradient(bottom, #000000 0%, #05061C 96%);
+  background-image: -ms-linear-gradient(bottom, #000000 0%, #05061C 96%);
+  background-image: linear-gradient(to bottom, #000000 0%, #05061C 96%);
+
+  .footer-top-bar {
+    height: 150px;
+    width: 100%;
+    background: url("../images/weird5.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  img.footerLogo {
+    display: block;
+    @media(min-width: 767px) {
+      margin-top: 20% !important;
+    }
+    width: 90px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+
+  .footer-links {
+    list-style: none;
+    margin: 4%;
+    padding-top: 60px;
+    li {
+        margin-top: 10px;
+        margin-left: 30%;
+      a {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 2%;
+      }
+    }
+  }
+.row-top {
+  padding-top: 5%;
+}
+  .contact-form-wrapper {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    float: left;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 5%;
+    #gform_submit_button_1 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: white;
+      background-color: transparent;
+      border: 2px solid white;
+    }
+    #gform_submit_button_1:hover {
+      background-color: #dfdfdf;
+      color: #0c44f8;
+      animation: rotate 1.8s infinite linear both;
+    }
+
+  }
+  .tagline-footer {
+    @media (min-width: 767px) {
+      padding: 15%;
+    }
+    @media (max-width: 767px) {
+      padding: 5%;
+    }
+    padding-top: 70px !important;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+  }
+}
+
+.rotateNow {
+  animation: rotate 1.8s infinite linear both;
+}
+
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .element {
+  -webkit-animation: KEYFRAME-NAME 5s infinite;
+  -moz-animation:    KEYFRAME-NAME 5s infinite;
+  -o-animation:      KEYFRAME-NAME 5s infinite;
+  animation:         KEYFRAME-NAME 5s infinite;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes KEYFRAME-NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

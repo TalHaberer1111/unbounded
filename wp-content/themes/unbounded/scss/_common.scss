@@ -1,0 +1,19 @@
+a.skipnav {
+	@include rem(11);
+	display: block;
+	padding: 5px 20px;
+	color: $gray-600;
+}
+
+/* make images full width */
+img.full {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+// html {
+// 	background: url("../images/bighorse.jpg");
+// 	background-size: cover;
+// 	background-position: top;
+// 	}
