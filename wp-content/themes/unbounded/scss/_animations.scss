@@ -472,16 +472,20 @@ h1.main, p.demos {
   @keyframes fadeInDown2 {
      0% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-20px);
      }
     50% {
-      opacity: 0.9;
-      transform: translateY(-140px);
+      opacity: 0.6;
+      transform: translateY(-30px);
     }
 
+     75% {
+        opacity: 0.8;
+        transform: translateY(100px);
+     }
      100% {
         opacity: 1;
-        transform: translateY(200px);
+        transform: translateY(0px);
      }
   }
 
@@ -493,8 +497,8 @@ h1.main, p.demos {
   }
 
   .fadeInDown2 {
-     -webkit-animation: fadeInDown2 1.8s ease-in;
-     animation: fadeInDown2 1.8s ease-in;
+     -webkit-animation: fadeInDown2 1.5s ease-in;
+     animation: fadeInDown2 1.5s ease-in;
      animation-fill-mode: forwards;
     -webkit-animationfill-mode: forwards;
   }

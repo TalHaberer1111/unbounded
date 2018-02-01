@@ -49,16 +49,16 @@
   }
 }
 
-.talpic {
+.circle-image {
   position: absolute;
-  bottom: 80px;
+  bottom: 100px;
   right: 10%;
   z-index: 111;
   width: 100%;
   height: auto;
   opacity: 0;
   @media (min-width: 767px) {
-    max-width: 320px;
+    max-width: 280px;
     }
   @media (max-width: 767px) {
     max-width: 180px;
@@ -89,8 +89,8 @@
 }
 
 .content-wrapper-three {
-  background: url("../images/group1.png") repeat-X;
-  background-size: 18% auto;
+  background: url("../images/group1.png") repeat-x;
+  background-size: 12% auto;
   background-position: center bottom;
   height: auto;
   width: 100%;
@@ -99,12 +99,13 @@
   padding-bottom: 12%;
   .main-header-three {
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 900;
+    // font-style: italic;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
     color: black;
     padding: 2%;
-    // margin-bottom: 40px !important;
+    margin-bottom: 10px !important;
     // text-shadow: 3px 3px 11px rgba(24, 30, 63,0.2);
     @media (max-width: 576px) {
         font-size: 40px;
@@ -118,13 +119,13 @@
     width: 100%;
     background-color: whitesmoke;
     box-shadow: 9px 9px 35px rgba(24, 30, 63,0.4);
-    // padding: 5%;
+    opacity: 0;
     font-family: 'Montserrat', sans-serif;
     @media (min-width: 767px) {
         height: 400px;
       }
     @media (max-width: 767px) {
-        height: 260px;
+        height: 280px;
         margin-top: 15px;
       }
   }
@@ -133,28 +134,42 @@
         padding: 15%;
       }
     @media (max-width: 767px) {
-        padding: 8%;
+        padding: 2%;
+      }
+      h2 {
+        padding: 3%;
+      }
+      p {
+        padding-top: 8px;
+        line-height: 30px;
+        font-weight: 600;
+        letter-spacing: .5px;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
       }
   }
   .call-box-2 {
     background: url("../images/fun.jpeg") no-repeat;
     background-size: cover;
+    text-align: center;
     @media (max-width: 767px) {
         padding-top: 100px;
       }
     @media (min-width: 767px) {
-        padding-top: 180px;
+        padding-top: 200px;
       }
     a {
-      font-size: 22px;
-      border: 2px solid black;
+      font-size: 18px;
+      border: 4px solid black;
       color: black;
       text-align: center;
       padding: 2.5%;
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: 1px;
       text-decoration: none;
       margin-top: 100px !important;
-      background-color: whitesmoke;
+      background-color: rgba(230,230,230, 0.6);
     }
     a:hover {
       background-color: transparent;

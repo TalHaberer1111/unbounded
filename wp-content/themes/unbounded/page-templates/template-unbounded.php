@@ -45,7 +45,7 @@ get_header(); ?>
 <div id="trigger3" class="trigger3">
 
 
-			<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/circle1.png'; ?>" alt="blue thing">
+			<img id="talpic" class="circle-image" src="<?php echo get_template_directory_uri() . '/images/circle2.png'; ?>" alt="blue thing">
 
 			<script>
 
@@ -217,20 +217,22 @@ get_header(); ?>
 				</div>
 			</div>
 
+			<div id="trigger7"></div>
+
 			<div class="content-wrapper-three">
-				<div class="container text-center">
+				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h1 class="main-header-three">What Next</h1>
+							<h1 class="main-header-three">Your Next Step</h1>
 						</div>
 						<div class="col-12 col-sm-6">
-							<div class="call-box call-box-1">
+							<div id="herebox" class="call-box call-box-1">
 								<h2>Join the Mission</h2>
 								<p>Named after the year when hard root beers soared in popularity with Colonial drinkers, the brew features ingredients such as blackstrap molasses, sassafras root bark, dried wintergreen and licorice.</p>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6">
-							<div class="call-box call-box-2">
+							<div id="herebox" class="call-box call-box-2">
 								<a class="volunteer" href="#">How to Volunteer</a>
 								<p></p>
 							</div>
@@ -239,6 +241,23 @@ get_header(); ?>
 					</div>
 
 				</div>
+
+				<script>
+
+					// init controller
+					var controller = new ScrollMagic.Controller();
+
+					// build scene
+					var scene = new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 0 })
+					// trigger animation by adding a css class
+					.setClassToggle("#herebox", "fadeInDown2")
+					// .setClassToggle("#here-box1", "fadeInLeft")
+					.addTo(controller);
+
+
+				</script>
+
+
 
 			</div>
 
