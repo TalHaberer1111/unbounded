@@ -45,7 +45,7 @@ get_header(); ?>
 <div id="trigger3" class="trigger3">
 
 
-			<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/talpic.png'; ?>" alt="blue thing">
+			<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/circle1.png'; ?>" alt="blue thing">
 
 			<script>
 
@@ -108,7 +108,7 @@ get_header(); ?>
 
 				<div id="about" class="text-box-main mx-auto">
 
-						<h1 class="whatDo">About Us</h1>
+						<h1 id="trigger6" class="whatDo">About Us</h1>
 						<p class="missionState text-center">We are Help Refugees.  We strive to ensure that we do no harm to those whose lives we touch.  We always want our impact to be positive and will always work towards making it this way.  Our aim is that those we assist are able to say that their lives (and prospects) have been improved by permitting us to assist them, by bringing them dignity, hope, respect and humanity.</p>
 
 					<img id="dolphin" class="dolphins" src="<?php echo get_template_directory_uri() . '/svg/dolphin.svg'; ?>" alt="blue thing">
@@ -116,17 +116,21 @@ get_header(); ?>
 
 						<script>
 
-						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
-						// trigger animation by adding a css class
-						.setClassToggle("#about", "fade-in",)
-						.addTo(controller);
+						// init controller
+						var controller = new ScrollMagic.Controller();
+
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#about", duration: 2200})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: "100%"})
 						// trigger animation by adding a css class
-						.setClassToggle("#dolphin", "fadeInDown2",)
+						.setClassToggle("#about", "fadeInDown")
 						.addTo(controller);
+
+						// // build scene
+						// var scene = new ScrollMagic.Scene({triggerElement: "#trigger6", duration: 600})
+						// // trigger animation by adding a css class
+						// .setClassToggle("#dolphin", "fadeInDown2",)
+						// .addTo(controller);
 
 						</script>
 
@@ -217,15 +221,19 @@ get_header(); ?>
 				<div class="container text-center">
 					<div class="row">
 						<div class="col-12">
-							<h1 class="main-header-three">Call to action</h1>
+							<h1 class="main-header-three">What Next</h1>
 						</div>
-						<div class="col-6">
-							<h2 class="tal1">Call to action</h2>
-							<a href="#">Click here</a>
+						<div class="col-12 col-sm-6">
+							<div class="call-box call-box-1">
+								<h2>Join the Mission</h2>
+								<p>Named after the year when hard root beers soared in popularity with Colonial drinkers, the brew features ingredients such as blackstrap molasses, sassafras root bark, dried wintergreen and licorice.</p>
+							</div>
 						</div>
-						<div class="col-6">
-							<h2 class="tal2">Call to action</h2>
-							<a href="#">Click here</a>
+						<div class="col-12 col-sm-6">
+							<div class="call-box call-box-2">
+								<a class="volunteer" href="#">How to Volunteer</a>
+								<p></p>
+							</div>
 						</div>
 
 					</div>

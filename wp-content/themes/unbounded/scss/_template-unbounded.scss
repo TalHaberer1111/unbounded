@@ -9,10 +9,11 @@
 .hero-wrapper {
   width: 100%;
    // border: 30px solid white;
-  height: 84vh;
+  // height: 84vh;
   @media(min-width: 767px) {
      border: 30px solid white;
-      height: 74vh;
+     height: 74vh;
+     // height: auto;
   }
   @media(max-width: 767px) {
      border: 10px solid white;
@@ -46,26 +47,6 @@
  font-family: 'Bangers', cursive;
     text-shadow: 3px 6px 35px rgba(24, 30, 63,0.6);
   }
-  // h2 {
-  //   position: absolute;
-  //   top: 50%;
-  //   letter-spacing: 1px;
-  //   font-weight: 700;
-  //   @media (min-width: 767px) {
-  //     font-size: 24px;
-  //   }
-  //   @media (max-width: 767px) {
-  //     font-size: 20px;
-  //     top: 48%;
-  //     padding: 5%;
-  //   }
-  //   text-align: center;
-  //   width: 100%;
-  //   color: white;
-  //   letter-spacing: 2px;
-  //   // font-weight: bold;
-  //   font-family: 'Roboto Condensed', sans-serif;
-  // }
 }
 
 .talpic {
@@ -87,12 +68,20 @@
 }
 .dolphins {
   position: absolute;
-  right: 1%;
-  bottom: -200px;
-  max-width: 280px;
+  // bottom: -200px;
   height: auto;
   width: 100%;
   z-index: 200;
+  @media (min-width: 767px) {
+    max-width: 240px;
+    right: 0;
+    bottom: -200px;
+    }
+  @media (max-width: 767px) {
+    max-width: 140px;
+    right: 0;
+    bottom: -110px;
+    }
 }
 
 #trigger5 {
@@ -100,15 +89,77 @@
 }
 
 .content-wrapper-three {
-  height: 500px;
+  background: url("../images/group1.png") repeat-X;
+  background-size: 18% auto;
+  background-position: center bottom;
+  height: auto;
   width: 100%;
   background-color: white;
+  padding-top: 3%;
+  padding-bottom: 12%;
   .main-header-three {
     font-size: 40px;
-    font-family: 'Bangers', cursive;
-    color: royalblue;
-    padding: 6%;
-    // text-shadow: 3px 6px 35px rgba(24, 30, 63,0.6);
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 2%;
+    // margin-bottom: 40px !important;
+    // text-shadow: 3px 3px 11px rgba(24, 30, 63,0.2);
+    @media (max-width: 576px) {
+        font-size: 40px;
+      }
+      span {
+        font-size: 50px;
+        padding-left: 10px;
+      }
+  }
+  .call-box {
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 9px 9px 35px rgba(24, 30, 63,0.4);
+    // padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+    @media (min-width: 767px) {
+        height: 400px;
+      }
+    @media (max-width: 767px) {
+        height: 260px;
+        margin-top: 15px;
+      }
+  }
+  .call-box-1 {
+    @media (min-width: 767px) {
+        padding: 15%;
+      }
+    @media (max-width: 767px) {
+        padding: 8%;
+      }
+  }
+  .call-box-2 {
+    background: url("../images/fun.jpeg") no-repeat;
+    background-size: cover;
+    @media (max-width: 767px) {
+        padding-top: 100px;
+      }
+    @media (min-width: 767px) {
+        padding-top: 180px;
+      }
+    a {
+      font-size: 22px;
+      border: 2px solid black;
+      color: black;
+      text-align: center;
+      padding: 2.5%;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 100px !important;
+      background-color: whitesmoke;
+    }
+    a:hover {
+      background-color: transparent;
+      color: white;
+    }
   }
 }
 
@@ -131,18 +182,13 @@
           margin-left: 10px;
           margin-top: -210px;
       }
-      // @media (max-width: 1024px) and (min-width: 576px) {
-      //     height: 1060px;
-      // }
       height: auto;
     width: 100%;
-    // margin:0 auto;
-    // display: block;
     background-color: white;
     margin-top: -110px;
     position: relative;
     z-index: 3;
-    box-shadow: 0px 30px 50px 0px rgba(11,12,17,0.8);
+    box-shadow: 0px 30px 50px 0px rgba(11,12,17,0.3);
     .sanOne {
       height: 350px;
       width: 100%;
@@ -510,8 +556,8 @@ opacity: 0.9;
   height: auto;
   margin: 0 auto;
   background-color: white;
-  border: 4px solid #323442;
   opacity: 0;
+  box-shadow: 0px 30px 50px 0px rgba(11,12,17,0.3);
   @media(min-width: 767px) {
       margin-top: 50px;
   }
