@@ -8,7 +8,7 @@ get_header(); ?>
 
       <div id="trigger1" class="hero-wrapper">
 
-        <h1 id="text1">UNBOUNDED SOULS</h1>
+        <h1 id="text1">Unbounded Souls</h1>
         <!-- <h2 id="text2">A New Dawn for Humanity</h2> -->
 
 				<div class="sp-container">
@@ -42,6 +42,27 @@ get_header(); ?>
 				</script>
 
       </div>
+<div id="trigger3" class="trigger3">
+
+
+			<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/talpic.png'; ?>" alt="blue thing">
+
+			<script>
+
+		// init controller
+		var controller = new ScrollMagic.Controller();
+
+		// build scene
+		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration:"100%",})
+		// trigger animation by adding a css class
+		.setClassToggle("#talpic", "fadeInLeft")
+		.addTo(controller);
+
+
+			</script>
+
+
+	</div>
 
       <div id="trigger2" class="section-content-boxes">
 
@@ -49,23 +70,23 @@ get_header(); ?>
 
           <div class="row">
 
-            <div class="col-12 col-md-12">
-							<div id="box1" class="content-box fadeInLeft">
+            <div class="col-6 col-sm-6">
+							<div id="box1" class="content-box">
 								<div class="row">
-									<div class="col-6 col-md-6 sanOne">
+									<div class="col-12 col-md-6 sanOne">
 										<?php the_field ('box_one_content'); ?>
 									</div>
-									<div class="col-6 col-md-6 sanTwo">
+									<div class="col-12 col-md-6 sanTwo">
 
 									</div>
 
 								</div>
 
 								<div class="row">
-									<div class="col-6 col-md-6 sanThree">
+									<div class="col-12 col-md-6 sanThree">
 
 									</div>
-									<div class="col-6 col-md-6 sanFour">
+									<div class="col-12 col-md-6 sanFour">
 									<?php the_field ('box_four_content'); ?>
 									</div>
 
@@ -74,45 +95,140 @@ get_header(); ?>
 							</div>
 
               </div>
+							<div class="col-6 col-sm-6 warp-you">
+								<!-- <img class="blue1" src="<?php echo get_template_directory_uri() . '/images/squars2.png'; ?>" alt="blue thing"> -->
+								<!-- <img class="blue2" src="<?php echo get_template_directory_uri() . '/images/blue1.png'; ?>" alt="blue thing"> -->
+							</div>
             </div>
 
-				<div class="text-box-main">
+<div id="trigger5">
 
-						<h1 class="whatDo text-center mx-auto">What We Do</h1>
-						<p class="missionState text-center mx-auto">We are Help Refugees.  We strive to ensure that we do no harm to those whose lives we touch.  We always want our impact to be positive and will always work towards making it this way.  Our aim is that those we assist are able to say that their lives (and prospects) have been improved by permitting us to assist them, by bringing them dignity, hope, respect and humanity.</p>
+
+
+
+				<div id="about" class="text-box-main mx-auto">
+
+						<h1 class="whatDo">About Us</h1>
+						<p class="missionState text-center">We are Help Refugees.  We strive to ensure that we do no harm to those whose lives we touch.  We always want our impact to be positive and will always work towards making it this way.  Our aim is that those we assist are able to say that their lives (and prospects) have been improved by permitting us to assist them, by bringing them dignity, hope, respect and humanity.</p>
+
+					<img id="dolphin" class="dolphins" src="<?php echo get_template_directory_uri() . '/svg/dolphin.svg'; ?>" alt="blue thing">
+
+
+						<script>
+
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
+						// trigger animation by adding a css class
+						.setClassToggle("#about", "fade-in",)
+						.addTo(controller);
+
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#about", duration: 2200})
+						// trigger animation by adding a css class
+						.setClassToggle("#dolphin", "fadeInDown2",)
+						.addTo(controller);
+
+						</script>
 
 
 					</div>
 
+
+
+			</div>
           </div>
-					<!-- <script>
+					<script>
 
 					// build scene
-					var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: "100%",})
+					var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: 2000,})
 					// trigger animation by adding a css class
-					.setClassToggle("#box1", "fadeInLeft")
+					.setClassToggle("#box1", "fadeInDown")
 					.addTo(controller);
 
-					</script> -->
+
+
+					</script>
 
         </div>
+<div id="trigger4">
+				<div class="section-about-us">
+					<div class="container">
+					<h1 class="text-center mx-auto">Writing a New Story</h1>
+
+					<div class="row">
+						<div class="col-12 col-sm-4">
+							<div  id="about-us" class="about-us">
+								<h2>Words of Wisdom</h2>
+								<p>The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.</p>
+								<h4>- Amelia Earhart</h4>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4">
+							<div  id="about-us" class="about-us">
+								<h2>Words of Wisdom</h2>
+								<p>Permanence, perseverance and persistence in spite of all obstacles, discouragements, and impossibilities: It is this, that in all things distinguishes the strong soul from the weak.</p>
+								<h4>- Thomas Carlyle</h4>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4">
+							<div id="about-us"  class="about-us">
+								<h2>Words of Wisdom</h2>
+								<p>The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.</p>
+								<h4>Amelia Earhart</h4>
+							</div>
+						</div>
 
 
-			<div class="image-slider-wrapper">
+					</div>
+
+						</div>
+
+						<script>
+
+					// init controller
+					var controller = new ScrollMagic.Controller();
+
+					// build scene
+					var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 0,})
+					// trigger animation by adding a css class
+					.setClassToggle("#about-us", "fadeInDown")
+					.addTo(controller);
+
+
+						</script>
+
+				</div>
+</div>
+
+			<!-- <div class="image-slider-wrapper">
 				 <?php echo do_shortcode('[slick-carousel-slider category="5" design="design-6" slidestoshow="3" fade="true" image_size="medium" autoplay="true" autoplay_interval="2000" centermode="true" variablewidth="true" dots="false" speed="1600" slidestoshow="1"]'); ?>
-			</div>
+			</div> -->
 
 			<div class="slider-section">
 				<div class="container">
 					<div class="slider-wrapper">
-				    <?php echo do_shortcode('[slick-slider category="6" design="design-5" arrows="false" speed="1400"]'); ?>
+				    <?php echo do_shortcode('[slick-slider category="6" design="design-5" arrows="false" speed="1200"]'); ?>
 					</div>
 
 				</div>
 			</div>
 
 			<div class="content-wrapper-three">
-				<div class="flex-row">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-12">
+							<h1 class="main-header-three">Call to action</h1>
+						</div>
+						<div class="col-6">
+							<h2 class="tal1">Call to action</h2>
+							<a href="#">Click here</a>
+						</div>
+						<div class="col-6">
+							<h2 class="tal2">Call to action</h2>
+							<a href="#">Click here</a>
+						</div>
+
+					</div>
 
 				</div>
 
@@ -123,15 +239,22 @@ get_header(); ?>
 			<div class="content-second-section">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-12 col-md-3 hello">
-							
-						</div>
-						<div class="col-sm-12 col-md-9 hello1">
+						<div class="col-sm-12 col-md-5 hello">
 
+						</div>
+						<div class="col-sm-12 col-md-7">
+							<video autoplay="true" loop="true" muted"true">
+							  <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/jar.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 
 				</div>
+
+			</div>
+
+			<div class="black-line-section">
 
 			</div>
 
@@ -156,9 +279,7 @@ get_header(); ?>
 
 			</div>
 
-			<!-- <div class="black-line-section">
 
-			</div> -->
 
 
 	</div>

@@ -14,13 +14,13 @@
  -moz-animation-fill-mode:forwards;
  animation-fill-mode:forwards;
 
- -webkit-animation-duration:1s;
- -moz-animation-duration:1s;
- animation-duration:1s;
+ -webkit-animation-duration:.3s;
+ -moz-animation-duration:.3s;
+ animation-duration:.3s;
 
- -webkit-animation-delay: 0.1s;
- -moz-animation-delay: 0.1s;
- animation-delay: 0.1s;
+ // -webkit-animation-delay: 0.1s;
+ // -moz-animation-delay: 0.1s;
+ // animation-delay: 0.1s;
 }
 
 .fade-in-two {
@@ -62,8 +62,8 @@
  }
 
  .fadeInLeft {
- -webkit-animation: fadeInLeft 1.3s ease-in;
- animation: fadeInLeft 1.3s ease-in;
+ -webkit-animation: fadeInLeft .6s ease-in;
+ animation: fadeInLeft .6s ease-in;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode:forwards;
@@ -136,16 +136,19 @@ h1.main, p.demos {
 	left: 0px;
 	top: 0px;
 	z-index: 1000;
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 .sp-container h2 {
   color: #bee7ff;
   font-family: 'Kaushan Script', cursive;
 	position: absolute;
-	top: 380px;
+	top: 411px;
 	line-height: 100px;
 	height: 60px;
 	margin-top: -50px;
-	font-size: 50px;
+	font-size: 30px;
 	width: 100%;
 	text-align: center;
   letter-spacing: 2px;
@@ -174,7 +177,7 @@ h1.main, p.demos {
 	animation-delay: 6s;
 }
 .sp-container h2.frame-4 {
-	font-size: 120px;
+	// font-size: 60px;
   font-family: 'Satisfy', cursive;
 	-webkit-animation-delay: 9s;
 	-moz-animation-delay: 9s;
@@ -182,10 +185,9 @@ h1.main, p.demos {
 	animation-delay: 9s;
 }
 .sp-container h2.frame-5 {
-  font-family: 'Satisfy', cursive;
   font-weight: 30px;
   @media (max-width: 576px) {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 32px;
     margin-top: 0px;
   }
@@ -193,17 +195,21 @@ h1.main, p.demos {
 	-moz-animation: none;
 	-ms-animation: none;
 	animation: none;
-	color: transparent;
+	// color: transparent;
 	text-shadow: 0px 0px 1px #fff;
-  line-height: 60px;
-  transform: rotate(359deg);
+  line-height: 40px;
+  transform: rotate(360deg);
+  padding: 3%;
 }
 .sp-container h2.frame-5 span {
 	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
 	-moz-animation: blurFadeIn 1s ease-in 12s backwards;
 	-ms-animation: blurFadeIn 3s ease-in 12s backwards;
 	animation: blurFadeIn 3s ease-in 12s backwards;
-	color: transparent;
+	// color: #e0efff;
+  // letter-spacing: 2px;
+  // font-weight: 100;
+  // font-size: 35px;
 	text-shadow: 0px 0px 1px #fff;
 }
 .sp-container h2.frame-5 span:nth-child(2) {
@@ -439,4 +445,126 @@ h1.main, p.demos {
 		opacity: 1;
 		transform: scale(1) rotate(0deg);
 	}
+}
+
+
+  @-webkit-keyframes fadeInDown {
+     0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+     }
+     100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+     }
+  }
+
+  @keyframes fadeInDown {
+     0% {
+        opacity: 0;
+        transform: translateY(-20px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateY(0);
+     }
+  }
+  @keyframes fadeInDown2 {
+     0% {
+        opacity: 0;
+        transform: translateY(-50px);
+     }
+    50% {
+      opacity: 0.9;
+      transform: translateY(-140px);
+    }
+
+     100% {
+        opacity: 1;
+        transform: translateY(200px);
+     }
+  }
+
+  .fadeInDown {
+     -webkit-animation: fadeInDown .5s ease-in;
+     animation: fadeInDown .5s ease-in;
+     animation-fill-mode: forwards;
+    -webkit-animationfill-mode: forwards;
+  }
+
+  .fadeInDown2 {
+     -webkit-animation: fadeInDown2 1.8s ease-in;
+     animation: fadeInDown2 1.8s ease-in;
+     animation-fill-mode: forwards;
+    -webkit-animationfill-mode: forwards;
+  }
+
+  //Dolphins animation
+
+  @keyframes dolphin-jump {
+  0% {
+    transform: translateY(150px) rotate(-90deg);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.375, 0.870);
+  }
+  60% {
+    transform: translateY(0) rotate(45deg);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  100% {
+    transform: translateY(150px) rotate(200deg);
+  }
+}
+@keyframes splash-in {
+  0% {
+    transform: scaleY(0) ;
+  }
+  10% {
+    transform: scaleY(0.6);
+  }
+  40% {
+    //transform: scaleY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(1) scaleX(0.5);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes splash-out {
+  0% {
+    transform: scaleY(0) ;
+  }
+  10% {
+    transform: scaleY(0.6);
+  }
+  40% {
+    //transform: scaleY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(0.2) scaleX(1.2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.loading {
+transform: scale(.9);
+}
+// #dolphin {
+//   animation: dolphin-jump 5.9s ease-in infinite;
+//   transform-origin: 116px 116px;
+//
+// }
+#splash-in {
+  transform-origin: bottom right;
+  animation: splash-out 1.5s infinite;
+}
+#splash-out {
+  transform-origin: bottom right;
+  animation: splash-out 1.5s -1.7s infinite;
 }
