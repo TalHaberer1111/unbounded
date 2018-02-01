@@ -90,7 +90,7 @@
 
 .content-wrapper-three {
   background: url("../images/group1.png") repeat-x;
-  background-size: 12% auto;
+  background-size: 10% auto;
   background-position: center bottom;
   height: auto;
   width: 100%;
@@ -100,13 +100,12 @@
   .main-header-three {
     font-size: 40px;
     font-weight: 900;
-    // font-style: italic;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
     color: black;
     padding: 2%;
-    margin-bottom: 10px !important;
-    // text-shadow: 3px 3px 11px rgba(24, 30, 63,0.2);
+    margin-bottom: 25px !important;
+    text-shadow: 1px 1px 7px rgba(24, 30, 63,0.3);
     @media (max-width: 576px) {
         font-size: 40px;
       }
@@ -407,6 +406,9 @@
       padding-bottom: 80px;
     }
   .slider-wrapper {
+    .wpsisac-slick-slider.design-5 .slick-image-slide .slide-wrap .slider-content {
+      padding: 60px 10px !important;
+    }
     max-width: 90%;
     width: 100%;
     margin: 0 auto;
