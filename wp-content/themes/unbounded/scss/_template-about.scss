@@ -1,0 +1,76 @@
+.page-template-template-about {
+.slider-wrapper {
+  margin-top: 40px;
+  padding-bottom: 300px;
+  // .wpsisac-slick-slider.design-3 .slick-image-slide .slide-wrap .slider-content{
+  //
+  // }
+  .wpsisac-slick-slider.design-3 .slick-image-slide img {
+    @media(min-width: 767px) {
+      max-width: 1200px;
+      height: 700px;
+    }
+    @media(max-width: 767px) {
+      max-width: 600px;
+      height: auto!important;
+      padding-bottom: 600px;
+    }
+    width: 100%;
+  }
+  .wpsisac-slick-slider.design-3 .slick-dots {
+        @media(min-width: 767px) {
+      bottom: -55px !important;
+    }
+    @media(max-width: 767px) {
+    top: 110% !important;
+      z-index: 999 !important;
+    }
+  }
+  .bg-overlay {
+    background-color: white !important;
+    width: 100%;
+    height: auto;
+    @media(min-width: 767px) {
+      margin-left: 20%;
+      max-width: 440px;
+    }
+    @media(max-width: 767px) {
+      margin: 0 auto;
+      padding-bottom: 300px !important;
+      z-index: 88;
+      overflow: visible;
+      margin-top: -10px !important;
+      max-width: 576px;
+      a {
+        display: none;
+      }
+    }
+    h2, h1, p {
+      color: black !important;
+      text-shadow: none !important;
+      font-family: 'Advent Pro', sans-serif;
+    }
+    h1 {
+      font-weight: 700;
+      @media(max-width: 767px) {
+      font-size: 22px;
+        z-index: 999 !important;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      @media(max-width: 767px) {
+      font-size: 26px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+}

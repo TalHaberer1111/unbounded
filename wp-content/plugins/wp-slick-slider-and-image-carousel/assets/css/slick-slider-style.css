@@ -95,7 +95,7 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-slider.design-3 .slick-arrow { top:45% !important;}
 .wpsisac-slick-slider.design-3 .slick-next{right:0px !important;}
 .wpsisac-slick-slider.design-3 .slick-prev{left:0px !important;}
-.wpsisac-slick-slider.design-3 .slick-dots{left:15px !important; right:15px; text-align:center;  bottom:8px !important;}
+.wpsisac-slick-slider.design-3 .slick-dots{left:15px !important; right:15px; text-align:center;}
 
 
 .wpsisac-slick-slider.design-4 .slick-image-slide img{max-width:100%; height:auto; display:inline-block;}
@@ -146,13 +146,13 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 
 .slide-wrap .readmore a.slider-readmore{padding:5px 10px; background:rgba(0,0,0,0.8); text-decoration:none !important; color:#fff;border:1px solid #fff; text-transform:uppercase}
 .wpcolumn,
-.wpcolumns {  padding-left: 0.9375em;  padding-right: 0.9375em;   float: left;  width:100%;  
+.wpcolumns {  padding-left: 0.9375em;  padding-right: 0.9375em;   float: left;  width:100%;
   position: relative; }
 
 @media only screen {
   .wpcolumn,  .wpcolumns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em; float: left; }
    }
- @media only screen and (min-width: 40.0625em) {  
+ @media only screen and (min-width: 40.0625em) {
   .wpcolumn,
   .wpcolumns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em;float: left; }
   .wp-medium-1 {    width: 8.33333%; }
@@ -180,8 +180,8 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
   .medium-offset-10 {    margin-left: 83.33333% !important; }
   .medium-offset-11 {    margin-left: 91.66667% !important; }
    }
-   
-@media only screen and (max-width: 40.0625em) {  
+
+@media only screen and (max-width: 40.0625em) {
    .slick-image-slide img{height: 100% !important;width: 100% !important;object-fit: cover;object-position: top center;}
    .slick-image-slide, .slide-wrap{height:350px;}
    .wpsisac-slick-slider.design-5 .slick-image-slide, .wpsisac-slick-slider.design-5  .slide-wrap{height:auto !important;}
@@ -191,6 +191,6 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
   .wpsisac-slick-slider.design-4 .slick-image-slide .slide-wrap .slider-content-left{padding:20px}
   .wpsisac-slick-carousal .slick-image-slide-wrap, .wpsisac-slick-carousal .slick-image-slide{height:auto !important}
   }
-@media only screen and (max-width: 480px) {   
+@media only screen and (max-width: 480px) {
   .wpsisac-slick-carousal.wpsisac-center .slick-slide .slick-image-slide-wrap { opacity: 1; transform: scale(1); transition: all 300ms ease 0s;}
 }
