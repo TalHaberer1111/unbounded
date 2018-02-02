@@ -74,22 +74,33 @@
  }
 
 
-.fade-in.one {
--webkit-animation-delay: 0.7s;
--moz-animation-delay: 0.7s;
-animation-delay: 0.7s;
+.fade-in-one {
+-webkit-animation: fadeInLeft .6s ease-in;
+animation: fadeInLeft .6s ease-in;
+
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
 }
 
-.fade-in.two {
--webkit-animation-delay: 1.2s;
--moz-animation-delay:1.2s;
-animation-delay: 1.2s;
+.fade-in-two {
+-webkit-animation: fadeInLeft .6s ease-in;
+animation: fadeInLeft .6s ease-in;
+animation-delay: .4s;
+
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
 }
 
-.fade-in.three {
--webkit-animation-delay: 1.6s;
--moz-animation-delay: 1.6s;
-animation-delay: 1.6s;
+.fade-in-three {
+-webkit-animation: fadeInLeft .6s ease-in;
+animation: fadeInLeft .6s ease-in;
+animation-delay: .8s;
+
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
 }
 .fade-in.four {
 -webkit-animation-delay: 2s;
@@ -490,15 +501,15 @@ h1.main, p.demos {
   }
 
   .fadeInDown {
-     -webkit-animation: fadeInDown .2s ease-in;
-     animation: fadeInDown .2s ease-in;
+     -webkit-animation: fadeInDown .8s ease-in;
+     animation: fadeInDown .8s ease-in;
      animation-fill-mode: forwards;
     -webkit-animationfill-mode: forwards;
   }
 
   .fadeInDown2 {
-     -webkit-animation: fadeInDown2 1.5s ease-in;
-     animation: fadeInDown2 1.5s ease-in;
+     -webkit-animation: fadeInDown2 1s ease-in;
+     animation: fadeInDown2 1s ease-in;
      animation-fill-mode: forwards;
     -webkit-animationfill-mode: forwards;
   }

@@ -52,7 +52,7 @@ get_header(); ?>
 		var controller = new ScrollMagic.Controller();
 
 		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration:"100%",})
+		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: 1000,})
 		// trigger animation by adding a css class
 		.setClassToggle("#circle-image", "fadeInLeft")
 		.addTo(controller);

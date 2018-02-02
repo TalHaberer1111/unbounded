@@ -113,10 +113,22 @@
 }
 
 .section-two {
-  height: 500px;
+  height: auto;
+  padding-top: 7%;
+  padding-bottom: 7%;
   width: 100%;
   background-color: white;
-  // border-bottom: 5px solid black;
+  .circle3 {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    @media(min-width: 576px) {
+    padding: 1%;
+    }
+    @media(max-width: 576px) {
+    padding: 6%;
+    }
+  }
 }
 
 // .white-line {

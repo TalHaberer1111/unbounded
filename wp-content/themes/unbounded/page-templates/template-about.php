@@ -50,7 +50,52 @@ get_header(); ?>
 
   </div>
 
-  <div class="section-two about-people">
+  <div id="trigger9" class="section-two about-people">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <img id="circle3" class="circle3 mx-auto" src="<?php echo get_template_directory_uri() . '/images/circle3.png'; ?>" alt="blue thing">
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img id="circle4" class="circle3 mx-auto" src="<?php echo get_template_directory_uri() . '/images/circle3.png'; ?>" alt="blue thing">
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img id="circle5" class="circle3 mx-auto" src="<?php echo get_template_directory_uri() . '/images/circle3.png'; ?>" alt="blue thing">
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: "100%",})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle3", "fade-in-one")
+      .addTo(controller);
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: "100%",})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle4", "fade-in-two")
+      .addTo(controller);
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: "100%",})
+      // trigger animation by adding a css class
+      .setClassToggle("#circle5", "fade-in-three")
+      .addTo(controller);
+
+
+
+    </script>
 
   </div>
 
