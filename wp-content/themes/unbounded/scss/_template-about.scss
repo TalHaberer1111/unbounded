@@ -9,22 +9,20 @@
   padding-bottom: 70px;
   position: relative;
   @media(min-width: 576px) {
-    background: url("../images/shapes6.png");
-    background-size: 16% auto;
-    background-position:  top;
+    background: url("../images/shapes6.png") repeat-x;
+    background-size: 22% auto;
+    background-position:  bottom;
   }
   @media(max-width: 576px) {
     padding-bottom: 100px;
+    background: url("../images/shapes6.png") repeat-x;
+    background-size: 50% auto;
+    background-position:  bottom;
   }
   .wpsisac-slick-slider.design-3 .slick-image-slide img {
     @media(min-width: 576px) {
       max-width: 1100px;
       height: 660px;
-    }
-    @media(max-width: 576px) {
-      max-width: 600px;
-      height: auto!important;
-      padding-bottom: 600px;
     }
     width: 100%;
   }
@@ -54,23 +52,22 @@
       margin-top: 60px;
     }
     @media(max-width: 576px) {
-      margin: 0 auto;
-      padding-bottom: 300px !important;
-      z-index: 88;
-      overflow: visible;
-      margin-top: -10px !important;
-      max-width: 576px;
-      a {
-        display: none;
-      }
+    display: none;
     }
     h2, h1, p {
       color: black !important;
       text-shadow: none !important;
       font-family: 'Advent Pro', sans-serif;
     }
+    a {
+      font-size: 14px;
+    }
+    p {
+      font-size: 20px !important;
+    }
     h1 {
       font-weight: 700;
+      font-size: 28px;
       @media(max-width: 576px) {
       font-size: 22px;
         z-index: 999 !important;
@@ -78,10 +75,27 @@
     }
     h2 {
       font-weight: 500;
+      font-size: 22px;
       @media(max-width: 576px) {
       font-size: 26px;
       }
     }
+  }
+  .about-header {
+    @media(min-width: 576px) {
+  display: none;
+  }
+  @media(max-width: 576px) {
+  text-align: center;
+  font-size: 76px;
+  color: white;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 800;
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  text-shadow: 3px 3px 15px black;
+  }
   }
 }
 .rec1 {

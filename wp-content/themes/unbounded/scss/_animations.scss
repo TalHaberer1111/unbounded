@@ -86,7 +86,7 @@ animation: fadeInLeft .6s ease-in;
 .fade-in-two {
 -webkit-animation: fadeInLeft .6s ease-in;
 animation: fadeInLeft .6s ease-in;
-animation-delay: .4s;
+animation-delay: .3s;
 
  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
  -moz-animation-fill-mode:forwards;
@@ -96,7 +96,7 @@ animation-delay: .4s;
 .fade-in-three {
 -webkit-animation: fadeInLeft .6s ease-in;
 animation: fadeInLeft .6s ease-in;
-animation-delay: .8s;
+animation-delay: .6s;
 
  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
  -moz-animation-fill-mode:forwards;

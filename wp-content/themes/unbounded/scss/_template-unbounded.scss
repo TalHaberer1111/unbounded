@@ -105,10 +105,10 @@
 
 .talpic {
   position: absolute;
-  max-width: 180px;
+  max-width: 240px;
   height: auto;
-  top: -50px;
-  right: 12%;
+  top: -100px;
+  right: 9%;
   z-index: 100;
   opacity: 0;
   @media (max-width: 576px) {
@@ -135,7 +135,6 @@
     color: black;
     padding: 2%;
     margin-bottom: 25px !important;
-    // text-shadow: 1px 1px 7px rgba(24, 30, 63,0.3);
     @media (max-width: 576px) {
         font-size: 40px;
       }

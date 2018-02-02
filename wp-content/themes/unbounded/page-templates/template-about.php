@@ -9,6 +9,8 @@ get_header(); ?>
 
     <img id="rec1" class="rec1" src="<?php echo get_template_directory_uri() . '/images/rec2.png'; ?>" alt="blue thing">
 
+    <h1 class="about-header">About</h1>
+
   </div>
   <div class="white-line">
 
@@ -76,19 +78,19 @@ get_header(); ?>
       var controller = new ScrollMagic.Controller();
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: "100%",})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: 1400,})
       // trigger animation by adding a css class
       .setClassToggle("#circle3", "fade-in-one")
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: "100%",})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: 1400,})
       // trigger animation by adding a css class
       .setClassToggle("#circle4", "fade-in-two")
       .addTo(controller);
 
       // build scene
-      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: "100%",})
+      var scene = new ScrollMagic.Scene({triggerElement: "#trigger9", duration: 1400,})
       // trigger animation by adding a css class
       .setClassToggle("#circle5", "fade-in-three")
       .addTo(controller);
