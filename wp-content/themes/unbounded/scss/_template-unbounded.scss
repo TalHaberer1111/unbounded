@@ -68,24 +68,54 @@
 }
 .dolphins {
   position: absolute;
-  // bottom: -200px;
   height: auto;
   width: 100%;
   z-index: 200;
   @media (min-width: 767px) {
-    max-width: 240px;
-    right: 0;
+    max-width: 340px;
+    right: -120px;
     bottom: -200px;
     }
   @media (max-width: 767px) {
-    max-width: 140px;
-    right: 0;
+    max-width: 120px;
+    right: -20px;
     bottom: -110px;
     }
 }
 
 #trigger5 {
   position: relative;
+}
+
+.planets2 {
+  opacity: 0;
+  max-width: 330px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 480px;
+  left: 2%;
+  z-index: 3;
+  @media (max-width: 576px) {
+    top: 470px;
+    left: 5px;
+    max-width: 130px;
+    }
+}
+
+.talpic {
+  position: absolute;
+  max-width: 180px;
+  height: auto;
+  top: -50px;
+  right: 12%;
+  z-index: 100;
+  opacity: 0;
+  @media (max-width: 576px) {
+    top: -90px;
+    right: 10%;
+    max-width: 160px;
+    }
 }
 
 .content-wrapper-three {
@@ -98,14 +128,14 @@
   padding-top: 3%;
   padding-bottom: 12%;
   .main-header-three {
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
     color: black;
     padding: 2%;
     margin-bottom: 25px !important;
-    text-shadow: 1px 1px 7px rgba(24, 30, 63,0.3);
+    // text-shadow: 1px 1px 7px rgba(24, 30, 63,0.3);
     @media (max-width: 576px) {
         font-size: 40px;
       }
@@ -333,6 +363,8 @@
   padding: 6%;
   }
   opacity: 0;
+  position: relative;
+  z-index: 2;
   background-color: #f7f7f7;
   padding: 5%;
   margin: 10%;

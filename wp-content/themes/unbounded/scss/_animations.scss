@@ -62,8 +62,8 @@
  }
 
  .fadeInLeft {
- -webkit-animation: fadeInLeft .6s ease-in;
- animation: fadeInLeft .6s ease-in;
+ -webkit-animation: fadeInLeft 1.2s ease-in;
+ animation: fadeInLeft 1.2s ease-in;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode:forwards;
@@ -490,8 +490,8 @@ h1.main, p.demos {
   }
 
   .fadeInDown {
-     -webkit-animation: fadeInDown .5s ease-in;
-     animation: fadeInDown .5s ease-in;
+     -webkit-animation: fadeInDown .2s ease-in;
+     animation: fadeInDown .2s ease-in;
      animation-fill-mode: forwards;
     -webkit-animationfill-mode: forwards;
   }
@@ -572,3 +572,62 @@ transform: scale(.9);
   transform-origin: bottom right;
   animation: splash-out 1.5s -1.7s infinite;
 }
+
+
+  @-webkit-keyframes fadeInRight {
+     0% {
+        opacity: 0;
+        -webkit-transform: translateX(60px);
+     }
+     100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+     }
+  }
+
+  @keyframes fadeInRight {
+     0% {
+        opacity: 0;
+        transform: translateX(60px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateX(0);
+     }
+  }
+
+  .fadeInRight {
+     -webkit-animation: fadeInRight 1.2s ease-in;
+     animation: fadeInRight 1.2s ease-in;
+     animation-fill-mode: forwards;
+    -webkit-animation-mode: forwards;
+  }
+
+  @-webkit-keyframes fadeInUpBig {
+     0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+     }
+     100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+     }
+  }
+
+  @keyframes fadeInUpBig {
+     0% {
+        opacity: 0;
+        transform: translateY(100px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateY(-20px);
+     }
+  }
+
+  .fadeInUpBig {
+    -webkit-animation: fadeInUpBig  1.2s ease-in;
+    animation: fadeInUpBig  1.2s ease-in;
+    animation-fill-mode: forwards;
+   -webkit-animation-mode: forwards;
+  }

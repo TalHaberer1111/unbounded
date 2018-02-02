@@ -23,7 +23,6 @@ get_header(); ?>
 						<span>Generation,</span>
 						<span>Will Make A Difference<br> In this World.</span>
 					</h2>
-					<a>Tal</a>
 				</div>
 			</div>
 
@@ -45,7 +44,7 @@ get_header(); ?>
 <div id="trigger3" class="trigger3">
 
 
-			<img id="talpic" class="circle-image" src="<?php echo get_template_directory_uri() . '/images/circle2.png'; ?>" alt="blue thing">
+			<img id="circle-image" class="circle-image" src="<?php echo get_template_directory_uri() . '/images/circle2.png'; ?>" alt="blue thing">
 
 			<script>
 
@@ -55,7 +54,7 @@ get_header(); ?>
 		// build scene
 		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration:"100%",})
 		// trigger animation by adding a css class
-		.setClassToggle("#talpic", "fadeInLeft")
+		.setClassToggle("#circle-image", "fadeInLeft")
 		.addTo(controller);
 
 
@@ -104,7 +103,9 @@ get_header(); ?>
 <div id="trigger5">
 
 
+				<img id="planets2" class="planets2" src="<?php echo get_template_directory_uri() . '/images/planets3.png'; ?>" alt="blue thing">
 
+				<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/talpic.png'; ?>" alt="blue thing">
 
 				<div id="about" class="text-box-main mx-auto">
 
@@ -126,11 +127,26 @@ get_header(); ?>
 						.setClassToggle("#about", "fadeInDown")
 						.addTo(controller);
 
-						// // build scene
-						// var scene = new ScrollMagic.Scene({triggerElement: "#trigger6", duration: 600})
-						// // trigger animation by adding a css class
-						// .setClassToggle("#dolphin", "fadeInDown2",)
-						// .addTo(controller);
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 1200})
+						// trigger animation by adding a css class
+						.setClassToggle("#planets2", "fadeInLeft",)
+						.addTo(controller);
+
+
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 1400})
+						// trigger animation by adding a css class
+						.setClassToggle("#dolphin", "fadeInUpBig",)
+						.addTo(controller);
+
+
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 1200})
+						// trigger animation by adding a css class
+						.setClassToggle("#talpic", "fadeInRight",)
+						.addTo(controller);
+
 
 						</script>
 

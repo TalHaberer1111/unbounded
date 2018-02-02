@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
 			<nav id="navbar-toggle-11" class="navbar navbar-expand-md">
 				<div class="container">
-				  <a class="navbar-brand" href="#home"> <img class="main-header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/unity.svg" alt=""></a>
+				  <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"> <img class="main-header-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/unity.svg" alt=""></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				    <div class="hamburger">
 				    	<span></span>
@@ -44,14 +44,14 @@ $( document ).ready(function() {
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarText">
 				    <ul class="navbar-nav main-center-nav mx-auto">
-				      <li class="nav-item active">
+				      <li class="nav-item active clickA">
 				        <a class="nav-link list-group" href="#box1">Start Journey<span class="sr-only">(current)</span></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link list-group" href="#about">About</a>
+				        <a class="nav-link list-group" href="<?php echo home_url( '/about' ); ?>">About</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link list-group" href="<?php echo home_url( '/quotes' ); ?>">Volunteer</a>
+				        <a class="nav-link list-group" href="">Volunteer</a>
 				      </li>
 							<li class="nav-item list-group">
 				        <a class="nav-link" href="<?php echo home_url( '/blog' ); ?>">Inspiration</a>
