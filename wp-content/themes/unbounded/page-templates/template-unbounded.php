@@ -103,7 +103,7 @@ get_header(); ?>
 <div id="trigger5">
 
 
-				<img id="planets2" class="planets2" src="<?php echo get_template_directory_uri() . '/images/planets3.png'; ?>" alt="blue thing">
+				<img id="planets2" class="planets2" src="<?php echo get_template_directory_uri() . '/images/planets4.png'; ?>" alt="blue thing">
 
 				<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/talpic.png'; ?>" alt="blue thing">
 
@@ -112,7 +112,7 @@ get_header(); ?>
 						<h1 id="trigger6" class="whatDo">About Us</h1>
 						<p class="missionState text-center">We are Help Refugees.  We strive to ensure that we do no harm to those whose lives we touch.  We always want our impact to be positive and will always work towards making it this way.  Our aim is that those we assist are able to say that their lives (and prospects) have been improved by permitting us to assist them, by bringing them dignity, hope, respect and humanity.</p>
 
-					<img id="dolphin" class="dolphins" src="<?php echo get_template_directory_uri() . '/svg/dolphin.svg'; ?>" alt="blue thing">
+					<img id="dolphin" class="dolphins" src="<?php echo get_template_directory_uri() . '/images/dolphins.png'; ?>" alt="blue thing">
 
 
 						<script>

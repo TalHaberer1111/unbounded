@@ -72,8 +72,8 @@
   width: 100%;
   z-index: 200;
   @media (min-width: 767px) {
-    max-width: 340px;
-    right: -120px;
+    max-width: 320px;
+    right: -180px;
     bottom: -200px;
     }
   @media (max-width: 767px) {
@@ -89,12 +89,12 @@
 
 .planets2 {
   opacity: 0;
-  max-width: 330px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   position: absolute;
   top: 480px;
-  left: 2%;
+  left: 4%;
   z-index: 3;
   @media (max-width: 576px) {
     top: 470px;
@@ -488,7 +488,7 @@
     width: 100%;
     height: 400px;
     opacity: 1;
-    border: 15px solid #323442;
+    border: 15px solid #0b283a;
     border-bottom: none;
     border-right: none;
     @media (max-width: 576px) {
@@ -507,7 +507,7 @@
     }
   }
   video {
-    border: 15px solid #323442;
+    border: 15px solid #0b283a;
     width: 100%;
     min-width: 1200px;
     min-height: 400px;
@@ -521,7 +521,7 @@
   // opacity: 0.7;
   padding-top:  50px;
   @media (min-width: 767px) {
-  border-bottom: 15px solid #323442;
+  border-bottom: 15px solid #0b283a;
   }
 }
 .column-wrapper {
@@ -573,7 +573,7 @@ opacity: 0.9;
   // margin-left: 10px;
   // margin-right: 10px;
   overflow-x: hidden;
-  background-color: #323442;
+  background-color: #0b283a;
   position: relative;
   z-index: 121;
 
@@ -586,7 +586,7 @@ opacity: 0.9;
       height: auto;
       padding-bottom: 10%;
   }
-  background-color: #323442;
+  background-color: #0b283a;
   width: 100%;
   padding-bottom: 60px;
   h1 {
