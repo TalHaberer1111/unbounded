@@ -608,8 +608,8 @@ transform: scale(.9);
   }
 
   .fadeInRight {
-     -webkit-animation: fadeInRight 1.2s ease-in;
-     animation: fadeInRight 1.2s ease-in;
+     -webkit-animation: fadeInRight .8s ease-in;
+     animation: fadeInRight .8s ease-in;
      animation-fill-mode: forwards;
     -webkit-animation-mode: forwards;
   }
@@ -637,8 +637,8 @@ transform: scale(.9);
   }
 
   .fadeInUpBig {
-    -webkit-animation: fadeInUpBig  1.2s ease-in;
-    animation: fadeInUpBig  1.2s ease-in;
+    -webkit-animation: fadeInUpBig  .8s ease-in;
+    animation: fadeInUpBig  .8s ease-in;
     animation-fill-mode: forwards;
    -webkit-animation-mode: forwards;
   }
