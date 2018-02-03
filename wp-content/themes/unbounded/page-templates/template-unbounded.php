@@ -122,27 +122,27 @@ get_header(); ?>
 
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: "100%"})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
 						// trigger animation by adding a css class
 						.setClassToggle("#about", "fadeInDown")
 						.addTo(controller);
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 1200})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
 						// trigger animation by adding a css class
 						.setClassToggle("#planets2", "fadeInLeft",)
 						.addTo(controller);
 
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 1400})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
 						// trigger animation by adding a css class
 						.setClassToggle("#dolphin", "fadeInUpBig",)
 						.addTo(controller);
 
 
 						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 1200})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
 						// trigger animation by adding a css class
 						.setClassToggle("#talpic", "fadeInRight",)
 						.addTo(controller);
