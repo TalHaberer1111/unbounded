@@ -44,7 +44,7 @@ get_header(); ?>
 <div id="trigger3" class="trigger3">
 
 
-			<img id="circle-image" class="circle-image" src="<?php echo get_template_directory_uri() . '/images/circle2.png'; ?>" alt="blue thing">
+			<img id="circle-image" class="circle-image" src="<?php echo get_template_directory_uri() . '/images/heart1.png'; ?>" alt="blue thing">
 
 			<script>
 
@@ -52,7 +52,7 @@ get_header(); ?>
 		var controller = new ScrollMagic.Controller();
 
 		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: 0,})
+		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: "100%",})
 		// trigger animation by adding a css class
 		.setClassToggle("#circle-image", "fadeInLeft")
 		.addTo(controller);
@@ -95,15 +95,18 @@ get_header(); ?>
 
               </div>
 							<div class="col-6 col-sm-6 warp-you">
-								<!-- <img class="blue1" src="<?php echo get_template_directory_uri() . '/images/squars2.png'; ?>" alt="blue thing"> -->
-								<!-- <img class="blue2" src="<?php echo get_template_directory_uri() . '/images/blue1.png'; ?>" alt="blue thing"> -->
+								<div class="box-black text-center">
+									<h2>Hello World</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<a href="#">Click Here</a>
+								</div>
 							</div>
             </div>
 
 <div id="trigger5">
 
 
-				<img id="planets2" class="planets2" src="<?php echo get_template_directory_uri() . '/images/planets4.png'; ?>" alt="blue thing">
+				<!-- <img id="planets2" class="planets2" src="<?php echo get_template_directory_uri() . '/images/planets4.png'; ?>" alt="blue thing"> -->
 
 				<img id="talpic" class="talpic" src="<?php echo get_template_directory_uri() . '/images/talpic.png'; ?>" alt="blue thing">
 
@@ -112,7 +115,7 @@ get_header(); ?>
 						<h1 id="trigger6" class="whatDo">About Us</h1>
 						<p class="missionState text-center">We are Help Refugees.  We strive to ensure that we do no harm to those whose lives we touch.  We always want our impact to be positive and will always work towards making it this way.  Our aim is that those we assist are able to say that their lives (and prospects) have been improved by permitting us to assist them, by bringing them dignity, hope, respect and humanity.</p>
 
-					<img id="dolphin" class="dolphins" src="<?php echo get_template_directory_uri() . '/images/dolphins.png'; ?>" alt="blue thing">
+					<img id="dolphin" class="dolphins" src="<?php echo get_template_directory_uri() . '/images/circle2.png'; ?>" alt="blue thing">
 
 
 						<script>
@@ -120,12 +123,12 @@ get_header(); ?>
 						// init controller
 						var controller = new ScrollMagic.Controller();
 
-
-						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
-						// trigger animation by adding a css class
-						.setClassToggle("#about", "fadeInDown")
-						.addTo(controller);
+            //
+						// // build scene
+						// var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
+						// // trigger animation by adding a css class
+						// .setClassToggle("#about", "fade-in")
+						// .addTo(controller);
 
 						// build scene
 						var scene = new ScrollMagic.Scene({triggerElement: "#trigger5", duration: 0})
@@ -176,21 +179,21 @@ get_header(); ?>
 					<h1 class="text-center">Writing a New Story</h1>
 
 					<div class="row">
-						<div class="col-12 col-sm-4">
+						<div class="col-12 col-md-4">
 							<div  id="about-us" class="about-us">
 								<h2>Words of Wisdom</h2>
 								<p>The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.</p>
 								<h4>- Amelia Earhart</h4>
 							</div>
 						</div>
-						<div class="col-12 col-sm-4">
+						<div class="col-12 col-md-4">
 							<div  id="about-us" class="about-us">
 								<h2>Words of Wisdom</h2>
 								<p>Permanence, perseverance and persistence in spite of all obstacles, discouragements, and impossibilities: It is this, that in all things distinguishes the strong soul from the weak.</p>
 								<h4>- Thomas Carlyle</h4>
 							</div>
 						</div>
-						<div class="col-12 col-sm-4">
+						<div class="col-12 col-md-4">
 							<div id="about-us"  class="about-us">
 								<h2>Words of Wisdom</h2>
 								<p>The most difficult thing is the decision to act, the rest is merely tenacity. The fears are paper tigers. You can do anything you decide to do. You can act to change and control your life; and the procedure, the process is its own reward.</p>
@@ -209,7 +212,7 @@ get_header(); ?>
 					var controller = new ScrollMagic.Controller();
 
 					// build scene
-					var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 0,})
+					var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", duration: 1800,})
 					// trigger animation by adding a css class
 					.setClassToggle("#about-us", "fadeInDown")
 					.addTo(controller);
@@ -248,7 +251,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6">
-							<div id="herebox" class="call-box call-box-2 text-center">
+							<div id="herebox1" class="call-box call-box-2 text-center">
 								<h2>Raise Awarness</h2>
 								<a class="volunteer" href="#">How to Volunteer</a>
 								<p></p>
@@ -271,6 +274,13 @@ get_header(); ?>
 					// .setClassToggle("#here-box1", "fadeInLeft")
 					.addTo(controller);
 
+					// build scene
+					var scene = new ScrollMagic.Scene({triggerElement: "#trigger7", duration: 0 })
+					// trigger animation by adding a css class
+					.setClassToggle("#herebox1", "fadeInDown3")
+					// .setClassToggle("#here-box1", "fadeInLeft")
+					.addTo(controller);
+
 
 				</script>
 
@@ -286,11 +296,11 @@ get_header(); ?>
 						<div class="col-sm-12 col-md-5 hello">
 
 						</div>
-						<div class="col-sm-12 col-md-7">
-							<video autoplay="true" loop="true" muted"true">
-							  <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/jar.mp4" type="video/mp4">
-							  Your browser does not support the video tag.
-							</video>
+						<div class="col-sm-12 col-md-7 image-side">
+							<h1 class="main-header-three">Get in Contact</h1>
+							<div class="contact-form-wrapper">
+									<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
+							</div>
 						</div>
 					</div>
 
