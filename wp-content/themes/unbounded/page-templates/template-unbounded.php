@@ -52,7 +52,7 @@ get_header(); ?>
 		var controller = new ScrollMagic.Controller();
 
 		// build scene
-		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: 1000,})
+		var scene = new ScrollMagic.Scene({triggerElement: "#fullpage", duration: 0,})
 		// trigger animation by adding a css class
 		.setClassToggle("#circle-image", "fadeInLeft")
 		.addTo(controller);
@@ -173,7 +173,7 @@ get_header(); ?>
 <div id="trigger4">
 				<div class="section-about-us">
 					<div class="container">
-					<h1 class="text-center mx-auto">Writing a New Story</h1>
+					<h1 class="text-center">Writing a New Story</h1>
 
 					<div class="row">
 						<div class="col-12 col-sm-4">
@@ -239,16 +239,17 @@ get_header(); ?>
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h1 class="main-header-three">Your Next Step</h1>
+							<h1 class="main-header-three">Our Next Step</h1>
 						</div>
 						<div class="col-12 col-sm-6">
-							<div id="herebox" class="call-box call-box-1">
+							<div id="herebox" class="call-box call-box-1 text-center">
 								<h2>Join the Mission</h2>
 								<p>Named after the year when hard root beers soared in popularity with Colonial drinkers, the brew features ingredients such as blackstrap molasses, sassafras root bark, dried wintergreen and licorice.</p>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6">
-							<div id="herebox" class="call-box call-box-2">
+							<div id="herebox" class="call-box call-box-2 text-center">
+								<h2>Raise Awarness</h2>
 								<a class="volunteer" href="#">How to Volunteer</a>
 								<p></p>
 							</div>

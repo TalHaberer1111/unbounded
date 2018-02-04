@@ -5,12 +5,17 @@ get_header(); ?>
 <main id="main-about" class="site-main backgroundUnbounded" role="main">
 
   <div class="slider-wrapper">
-    <?php echo do_shortcode('[slick-slider category="4" design="design-3" autoplay="true" autoplay_interval="3000" fade="true" arrows="false"]'); ?>
+    <!-- <?php echo do_shortcode('[slick-slider category="4" design="design-3" autoplay="true" autoplay_interval="3000" fade="true" arrows="false"]'); ?> -->
 
-    <img id="rec1" class="rec1" src="<?php echo get_template_directory_uri() . '/images/rec2.png'; ?>" alt="blue thing">
+    <img id="happy11" class="happy11" src="<?php echo get_template_directory_uri() . '/images/light.jpeg'; ?>" alt="blue thing">
 
-    <h1 class="about-header">About</h1>
+    <!-- <h1 class="aboutUs">About Us</h1> -->
 
+        <!-- <img id="rec1" class="rec1" src="<?php echo get_template_directory_uri() . '/images/rec2.png'; ?>" alt="blue thing"> -->
+    <div id="whiteC" class="white-box">
+      <p>Hello</p>
+
+    </div>
   </div>
   <div class="white-line">
 
@@ -20,9 +25,13 @@ get_header(); ?>
       <div class="row">
 
       <div id="here1" class="col-12 col-md-6 here1">
+        <h1>Who We Are</h1>
+        <a class="box-button" href="#">Learn More</a>
 
       </div>
       <div id="here2" class="col-12 col-md-6 here2">
+        <h1>We Specialize In</h1>
+        <a class="vision-button" href="#">Look at our Vision</a>
 
       </div>
 
@@ -34,6 +43,12 @@ get_header(); ?>
 
       // init controller
       var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#main-about", duration: "100%", offset: 10,})
+      // trigger animation by adding a css class
+      .setClassToggle("#whiteC", "fadeInDown2")
+      .addTo(controller);
 
       // build scene
       var scene = new ScrollMagic.Scene({triggerElement: "#trigger8", duration: "100%", offset: 10,})
