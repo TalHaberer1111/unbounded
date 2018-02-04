@@ -742,4 +742,12 @@ opacity: 0.9;
   }
 }
 
+footer {
+  #gform_wrapper_1 {
+    @media (min-width: 767px) {
+      display: none !important;
+    }
+  }
+}
+
 }

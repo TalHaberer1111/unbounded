@@ -241,6 +241,9 @@
   bottom: -70px;
   left: 570px;
   margin-left: -100px;
+  @media(max-width: 576px) {
+  display: none;
+  }
 }
 
 .section-two {
