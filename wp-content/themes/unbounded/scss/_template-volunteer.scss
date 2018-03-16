@@ -1,72 +1,63 @@
 .page-template-template-volunteer {
+  position: relative;
 
-  .sliderTwo {
-    margin: 6%;
-    font-family: 'Kaushan Script', cursive;
-    height: auto;
-    .slick-slide {
-      opacity: 0.3;
-      font-size: 16px;
-      padding-left: 10px;
-      padding-right: 10px;
-      text-align: center;
-      padding-top: 60px;
-      transform: rotate(357deg); /* Equal to rotateZ(45deg) */
-    }
-    .slick-current {
-    opacity: 1 !important;
-    font-size: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: 1px;
-    text-align: center !important;
-    margin-top: -40px;
-  }
-
-  }
-
-.image-slider {
-  img {
-    max-width: 600px;
+  #pinContainer {
     width: 100%;
-    max-height: 400px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
   }
-}
-}
+  #slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+   box-shadow: 0px 30px 50px 0px rgba(11, 12, 17, 0.3);
+  }
+  .panel {
+    height: 100%;
+    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: right;
+  }
 
-.sections {
-  padding: 6%;
-  min-height: auto;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300;
-}
+  .blue {
+    background-color: blue;
+  }
 
-.row-text {
-  font-family: 'News Cycle', sans-serif;
-  font-size: 20px;
-}
+  .teal {
+    background-color: teal;
+  }
 
-.image-content img {
-  width: 200px;
-  height: 200px;
-  display: block;
-  margin: 0 auto;
-  padding: 5%;
-}
-
-.quotes-row {
+  .yellow {
+    background-color: yellow;
+  }
+  .whitesmoke {
+    background: url('../images/bighorse.jpg') no-repeat center center;
+    background-size: cover;
+  }
+.under-pin {
+  position: fixed;
+  top: 20%;
   text-align: center;
-  .quotes {
-    font-size: 25px;
-    letter-spacing: 2px;
-    line-height: 34px;
-  }
-  .name {
-    font-size: 34px;
-    text-align: center;
-    font-family: 'Great Vibes', cursive;
-  }
+  z-index: -1;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  font-size: 30px;
+  font-family: 'Limelight', cursive;
+  background-color: white;
+  padding: 3%;
+  box-shadow: 0px 30px 50px 0px rgba(11, 12, 17, 0.3);
+  -webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.under-pin:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background-color: black;
+}
 }

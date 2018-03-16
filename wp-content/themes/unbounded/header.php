@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Bangers|Exo:300,500,700,700i,800i,900|Martel:700|Montserrat:200,300,400,600,700|Roboto+Slab:100,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Anonymous+Pro:400,400i,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
 <?php wp_head(); ?>
 <script>
 

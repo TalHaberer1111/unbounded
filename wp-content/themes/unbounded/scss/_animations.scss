@@ -103,9 +103,17 @@ animation-delay: .6s;
  animation-fill-mode:forwards;
 }
 .fade-in.four {
+  -webkit-animation: fadeInLeft 1.6s ease-in;
+  animation: fadeInLeft 1.6s ease-in;
+  animation-delay: 1.6s;
+
 -webkit-animation-delay: 2s;
 -moz-animation-delay: 2s;
 animation-delay: 2s;
+
+-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards;
 }
 .fade-in.five {
 -webkit-animation-delay: 2.5s;
@@ -598,6 +606,7 @@ transform: scale(.9);
 #splash-in {
   transform-origin: bottom right;
   animation: splash-out 1.5s infinite;
+  animation-fill-mode: forwards;
 }
 #splash-out {
   transform-origin: bottom right;
@@ -662,3 +671,48 @@ transform: scale(.9);
     animation-fill-mode: forwards;
    -webkit-animation-mode: forwards;
   }
+
+  /* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+  from { -webkit-transform: rotateY(0deg);    }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+/* all other browsers */
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+
+.spinner {
+   -webkit-animation-name: spinner;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-duration: 6s;
+  //  animation-fill-mode: forwards;
+  // -webkit-animation-mode: forwards;
+
+   animation-name: spinner;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 6s;
+
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -ms-transform-style: preserve-3d;
+   transform-style: preserve-3d;
+ }
+
+ #spinner:hover {
+   -webkit-animation-play-state: paused;
+   animation-play-state: paused;
+ }
